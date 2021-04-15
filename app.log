@@ -1,0 +1,4 @@
+2021-04-15 12:05:21.366 [main] INFO  com.service.MavenGrabberService - Maven Grabber Service has been created:
+2021-04-15 12:05:21.370 [main] INFO   - Launching...
+2021-04-15 12:05:30.759 [main] INFO  com.service.MavenGrabberService - parsing argument:cassandra-driver-core
+2021-04-15 12:05:33.987 [main] INFO  com.service.MavenGrabberService - Shutting down
