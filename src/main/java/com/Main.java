@@ -10,22 +10,20 @@ import com.service.MavenGrabberService;
 
 public class Main {
 
-	static final Logger logger = LogManager.getRootLogger();
+    static final Logger logger = LogManager.getRootLogger();
 
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-		MavenGrabberService service = new MavenGrabberService();
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String userInput ;
-		logger.info("Launching...");
-		do {
-				System.out.println("enter artifact or group id");
-				userInput = reader.readLine();
-				String[] s = new String[1];
-					s[0] = userInput;
-					service.parseArguments(s);
-		} while (!userInput.equals("-exit"));
+        MavenGrabberService service = new MavenGrabberService();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String userInput;
+        logger.info("Launching...");
+        do {
+            System.out.println("enter artifact or group id");
+            userInput = reader.readLine();
+            service.parseArguments(new String[]{userInput});
+        } while (!userInput.equals("-exit"));
 
-	}
+    }
 
 }
