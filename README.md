@@ -5,12 +5,12 @@ This microservice search items by artifact or group id in Maven Central.
 # Usage
 Clone project.
 In command line use combination
-java -jar maven-grabber.jar.
+`java -jar maven-grabber.jar.`
 Then application should run.
 Options:
--a <args>, <args>, ...
+`-a <args>, <args>, ...`
 search elements by artifactId,
--g <args>,<args>, ...
+`-g <args>,<args>, ...`
 search elements by groupId. Maven will respond with JSON. Number of arguments are unlimited.
 
 # Options
